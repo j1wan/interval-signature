@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="Interval Signatures of Celebs, Data Scientists">
+	<meta name="keywords" content="">
+	<meta name="author" content="Jiwan Jeong">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./intsig.css" >
+	<title>Interval Signatures of Celebrities and Researchers on Twitter</title>
+</head>
+
+<body>
+	<!--
+	<h2>Celebs</h2>
+	<a href='http://www.huffingtonpost.com/fueled/10-celebs-that-celebrity-twitter_b_4676062.html'>10 celebs that actually run their own Twitter account,</a> based on an article from the Huffington Post.
+	-->
+	
+	<div class='panel'>
+		<div class='who'>Katy Perry <a href='http://twitter.com/katyperry'>@katyperry</a></div>
+		<img src='plots/katyperry.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Ellen DeGeneres <a href='http://twitter.com/TheEllenShow'>@TheEllenShow</a></div>
+		<img src='plots/TheEllenShow.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Jimmy Fallon <a href='http://twitter.com/jimmyfallon'>@jimmyfallon</a></div>
+		<img src='plots/jimmyfallon.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Khloe Kardashian <a href='http://twitter.com/khloekardashian'>@khloekardashian</a></div>
+		<img src='plots/khloekardashian.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Shaquille O'Neal <a href='http://twitter.com/SHAQ'>@SHAQ</a></div>
+		<img src='plots/SHAQ.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Sofia Vergara <a href='http://twitter.com/SofiaVergara'>@SofiaVergara</a></div>
+		<img src='plots/SofiaVergara.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Steve Martin <a href='http://twitter.com/SteveMartinToGo'>@SteveMartinToGo</a></div>
+		<img src='plots/SteveMartinToGo.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Lance Armstrong <a href='http://twitter.com/lancearmstrong'>@lancearmstrong</a></div>
+		<img src='plots/lancearmstrong.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Rainn Wilson <a href='http://twitter.com/rainnwilson'>@rainnwilson</a></div>
+		<img src='plots/rainnwilson.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Cher <a href='http://twitter.com/cher'>@cher</a></div>
+		<img src='plots/cher.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Lada A. Adamic <a href='http://twitter.com/ladamic'>@ladamic</a></div>
+		<img src='plots/ladamic.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Eytan Adar <a href='http://twitter.com/eytanadar'>@eytanadar</a></div>
+		<img src='plots/eytanadar.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Yong-Yeol Ahn <a href='http://twitter.com/yy'>@yy</a></div>
+		<img src='plots/yy.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Xavier Amatriain <a href='http://twitter.com/xamat'>@xamat</a></div>
+		<img src='plots/xamat.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Sinan Aral <a href='http://twitter.com/sinanaral'>@sinanaral</a></div>
+		<img src='plots/sinanaral.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Eytan Bakshy <a href='http://twitter.com/eytan'>@eytan</a></div>
+		<img src='plots/eytan.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Albert-László Barabási <a href='http://twitter.com/barabasi'>@barabasi</a></div>
+		<img src='plots/barabasi.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Michael S. Bernstein <a href='http://twitter.com/msbernst'>@msbernst</a></div>
+		<img src='plots/msbernst.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Carlos Castillo <a href='http://twitter.com/ChaToX'>@ChaToX</a></div>
+		<img src='plots/ChaToX.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Justin Cheng <a href='http://twitter.com/jcccf'>@jcccf</a></div>
+		<img src='plots/jcccf.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Ed Chi <a href='http://twitter.com/edchi'>@edchi</a></div>
+		<img src='plots/edchi.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Nicholas A. Christakis <a href='http://twitter.com/NAChristakis'>@NAChristakis</a></div>
+		<img src='plots/NAChristakis.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Aaron Clauset <a href='http://twitter.com/aaronclauset'>@aaronclauset</a></div>
+		<img src='plots/aaronclauset.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Peter Sheridan Dodds <a href='http://twitter.com/peterdodds'>@peterdodds</a></div>
+		<img src='plots/peterdodds.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Ashish Goel <a href='http://twitter.com/ashishgoel'>@ashishgoel</a></div>
+		<img src='plots/ashishgoel.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Bruno Gonçalves <a href='http://twitter.com/bgoncalves'>@bgoncalves</a></div>
+		<img src='plots/bgoncalves.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Scott A. Golder <a href='http://twitter.com/redlog'>@redlog</a></div>
+		<img src='plots/redlog.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>César A. Hidalgo <a href='http://twitter.com/cesifoti'>@cesifoti</a></div>
+		<img src='plots/cesifoti.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Bernardo Huberman <a href='http://twitter.com/bhuberman'>@bhuberman</a></div>
+		<img src='plots/bhuberman.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Brian C. Keegan <a href='http://twitter.com/bkeegan'>@bkeegan</a></div>
+		<img src='plots/bkeegan.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Gary King <a href='http://twitter.com/kinggary'>@kinggary</a></div>
+		<img src='plots/kinggary.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Haewoon Kwak <a href='http://twitter.com/haewoon'>@haewoon</a></div>
+		<img src='plots/haewoon.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>David Lazer <a href='http://twitter.com/davidlazer'>@davidlazer</a></div>
+		<img src='plots/davidlazer.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Sune Lehmann <a href='http://twitter.com/suneman'>@suneman</a></div>
+		<img src='plots/suneman.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Jure Leskovec <a href='http://twitter.com/jure'>@jure</a></div>
+		<img src='plots/jure.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Rob Miller <a href='http://twitter.com/rbmllr'>@rbmllr</a></div>
+		<img src='plots/rbmllr.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Sue Moon <a href='http://twitter.com/sbmoon'>@sbmoon</a></div>
+		<img src='plots/sbmoon.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Andrew Y. Ng <a href='http://twitter.com/AndrewYNg'>@AndrewYNg</a></div>
+		<img src='plots/AndrewYNg.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Alice Oh <a href='http://twitter.com/aliceoh'>@aliceoh</a></div>
+		<img src='plots/aliceoh.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Hilary Parker <a href='http://twitter.com/hspter'>@hspter</a></div>
+		<img src='plots/hspter.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Mason Porter <a href='http://twitter.com/masonporter'>@masonporter</a></div>
+		<img src='plots/masonporter.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Daniel M. Romero <a href='http://twitter.com/DanielMRomero'>@DanielMRomero</a></div>
+		<img src='plots/DanielMRomero.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Deb Roy <a href='http://twitter.com/dkroy'>@dkroy</a></div>
+		<img src='plots/dkroy.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Jari Saramäki <a href='http://twitter.com/JariSaramaki'>@JariSaramaki</a></div>
+		<img src='plots/JariSaramaki.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Steven Strogatz <a href='http://twitter.com/stevenstrogatz'>@stevenstrogatz</a></div>
+		<img src='plots/stevenstrogatz.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Matthew Salganik <a href='http://twitter.com/msalganik'>@msalganik</a></div>
+		<img src='plots/msalganik.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Jaime Teevan <a href='http://twitter.com/jteevan'>@jteevan</a></div>
+		<img src='plots/jteevan.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Johan Ugander <a href='http://twitter.com/jugander'>@jugander</a></div>
+		<img src='plots/jugander.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Alessandro Vespignani <a href='http://twitter.com/alexvespi'>@alexvespi</a></div>
+		<img src='plots/alexvespi.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Duncan J. Watts <a href='http://twitter.com/duncanjwatts'>@duncanjwatts</a></div>
+		<img src='plots/duncanjwatts.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Ingmar Weber <a href='http://twitter.com/ingmarweber'>@ingmarweber</a></div>
+		<img src='plots/ingmarweber.png' height='400' width='1200'>
+	</div>
+	<div class='panel'>
+		<div class='who'>Christo Wilson <a href='http://twitter.com/bowlinearl'>@bowlinearl</a></div>
+		<img src='plots/bowlinearl.png' height='400' width='1200'>
+	</div>
+</body>

@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+body {
+	margin: 0;
+	background-color: #AAAAAA ;
+	font-family: 'PT Sans', sans-serif;
+	line-height: 1.5em;
+}
+
+div.who {
+	font-size: 2em;
+	line-height: 2em;
+}
+
+div.panel {
+	background-color: #FFFFFF;
+	width: 1200px;
+	border-radius: 1.5em;
+	padding: 0em 1em;
+	margin: 1em auto;
+
+}
+
+
+
+
